@@ -1,10 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
-	// Ẩn phần tử "loading" sau 2 giây
 
 	document.getElementById("loading").style.display = "none";
 	document.getElementById("loading-HEART").style.display = "none";
 
-	const apiUrl = "https://wedding3-2.onrender.com/posts?limit=1000";
+	const apiUrl = "https://wedding3-2.onrender.com/posts?limit=1200";
 	getData(apiUrl);
 
 	// Search
@@ -266,7 +265,7 @@ setInterval(updateCountdown, 1000);
 var audio = document.getElementById("myAudio");
 var playButton = document.getElementById("playButton");
 
-playButton.addEventListener("click", function () {
+function handleClick() {
 	if (audio.paused) {
 		audio.play();
 		playButton.innerHTML =
@@ -276,4 +275,7 @@ playButton.addEventListener("click", function () {
 		playButton.innerHTML =
 			'<span class="material-symbols-outlined circle-shape"  title="Click vào đây để nghe nhạc">music_note</span>';
 	}
-});
+}
+
+playButton.addEventListener("click", handleClick);
+
