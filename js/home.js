@@ -231,7 +231,7 @@ function addMessage() {
 
 // coundown
 // Định nghĩa ngày kết thúc
-var endDate = new Date("2024/07/07 11:00:00");
+var endDate = new Date("2024/07/17 11:00:00");
 
 function updateCountdown() {
 	// Lấy thời gian hiện tại
